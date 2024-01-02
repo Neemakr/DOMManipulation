@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            OnMouse and MouseOut
+        </title>
+    </head>
+    <body>
+        <div onmouseover="Mover(this)" style = "background-color: bisque; padding: 40px; width: 120px" onmouseout="Out(this)">
+            Mouse Over Me
+        </div>
+        <script>
+            function Mover(obj){
+                obj.innerHTML = "ThankYou!"
+            }
+            function Out(obj){
+                obj.innerHTML = "Mouse Over Me!"
+            }
+        </script>
+    </body>
+</html>

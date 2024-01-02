@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            Adding Multiple Event Listeners
+        </title>
+    </head>
+    <body>
+        <button id="myBtn">
+            Click Me!
+        </button>
+        <script>
+            let x = document.getElementById("myBtn");
+            x.addEventListener("click", FirstFunction);
+            x.addEventListener("click", SecondFunction);
+            function FirstFunction(){
+                alert("Hello World!")
+            }
+            function SecondFunction(){
+                alert("This function is also executed")
+            }
+        </script>
+    </body>
+</html>

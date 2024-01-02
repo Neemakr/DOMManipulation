@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            Number Validation
+        </title>
+    </head>
+    <body>
+        <script>
+            function ValidateNumb(){
+                let x = document.forms["myForms"]["numb"].value;
+                if(isNaN(x) || x < 1 || x > 10){
+                    alert("Input should be between 1 and 10");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+    <form name = "myForms" onsubmit="return ValidateNumb()">
+        Number: <input type="text" name = "numb">
+    </form>
+</html>

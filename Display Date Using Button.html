@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>
+            Display Date after clicking on the button
+        </title>
+    </head>
+    <body>
+        <button id = "myBtn">
+            Try it
+        </button>
+        <script>
+            document.getElementById("myBtn").onclick = DisplayDate();
+            function DisplayDate(){
+                let date =new Date();
+                return date;
+            }
+        </script>
+    </body>
+</html>

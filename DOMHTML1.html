@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            DOM Elements
+        </title>
+    </head>
+    <body>
+        <p id = "intro">
+            Finding HTML Elements by Id
+        </p>
+        <p>
+            This example demonstrates 
+            <b>
+                getElementById
+            </b>
+            method.
+        </p>
+        <p id = "demo"></p>
+        <script>
+            let element = document.getElementById("intro");
+            document.getElementById("demo").innerHTML = "This is a text from intro paragraph" + element.innerHTML;
+            let a = document.getElementsByTagName("p");
+        </script>
+    </body>
+</html>

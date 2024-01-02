@@ -1,0 +1,26 @@
+<!--Methods are the actions which we perform on the elements
+DOM properties are the elements(of the HTML elements) which we perform actions on-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            My first DOM 
+        </title>
+        <body>
+            <h1 id = "demo">
+                My first paragragh for DOM manipulation
+            </h1>
+            <p>
+                Hi paragraph
+            </p>
+            <p>
+                Paragraph2.
+            </p>
+            <script>
+                document.getElementById("demo").innerHTML = "Hello World!";
+                let a = document.getElementsByTagName("p");
+                alert(`The number of p tags : ${a.length}`);
+            </script>
+        </body>
+    </head>
+</html>

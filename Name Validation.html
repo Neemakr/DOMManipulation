@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <script>
+            function validateForm(){
+                let x = document.forms["myForms"]["fName"].value;
+                if(x == ""){
+                    alert("Name cannot be empty");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+    <form onsubmit="validateForm()" name = "myForms">
+        <label for = "fName">
+            FirstName:
+        </label>
+        <input type="text" name = "fName" id = "fName">
+        <input type="submit" value="SUBMIT">
+    </form>
+</html>

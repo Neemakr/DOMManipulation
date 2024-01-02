@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Practice
+        </title>
+    </head>
+    <body>
+        <div id = "first">
+            <p>
+                Paragraph1 inside id First
+            </p>
+            <p>
+                Paragraph2 inside id First
+            </p>
+        </div>
+        <p>
+            Paragraph2.
+        </p>
+        <p id = "demo"></p>
+        <script>
+            let element = document.getElementById("first");
+            let x = element.getElementsByTagName("p");
+            let a = document.getElementsByTagName("p");
+            alert("The number of p tags:" + a.length);
+            document.getElementById("demo").innerHTML = "This is a text" + x[0].innerHTML;
+        </script>
+    </body>
+</html>
